@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c3207a43-65ae-4d64-bddc-f0ca4090a7bc",
+		"_postman_id": "6088d7ae-61b8-4e80-b13f-5da29604a172",
 		"name": "CRM",
 		"description": "Mini CRM Task",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -15,7 +15,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
 						}
 					},
 					"response": []
@@ -23,10 +35,32 @@
 				{
 					"name": "Create an employee",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/employees?first_name=emp1&last_name=last",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "emp1"
+								},
+								{
+									"key": "last_name",
+									"value": "last"
+								}
+							]
 						}
 					},
 					"response": []
@@ -37,7 +71,20 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/employees/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
 						}
 					},
 					"response": []
@@ -45,10 +92,33 @@
 				{
 					"name": "Update an employee",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/employees/4?first_name=emp88&last_name=last upd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "emp88"
+								},
+								{
+									"key": "last_name",
+									"value": "last upd"
+								}
+							]
 						}
 					},
 					"response": []
@@ -56,10 +126,23 @@
 				{
 					"name": "Delete an employee",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/employees/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
 						}
 					},
 					"response": []
@@ -75,7 +158,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/companies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies"
+							]
 						}
 					},
 					"response": []
@@ -83,10 +178,28 @@
 				{
 					"name": "Create a company",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/companies?name=cmp1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "cmp1"
+								}
+							]
 						}
 					},
 					"response": []
@@ -97,7 +210,20 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -105,10 +231,29 @@
 				{
 					"name": "Update a company",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/companies/1?name=cmp upd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "cmp upd"
+								}
+							]
 						}
 					},
 					"response": []
@@ -116,10 +261,23 @@
 				{
 					"name": "Delete a company",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -129,10 +287,38 @@
 		{
 			"name": "Admin Login",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://127.0.0.1:8000/api/admin/login?email=admin@admin.com&password=password",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@admin.com"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
 				}
 			},
 			"response": []
