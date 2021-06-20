@@ -23,7 +23,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-green">
                         <div class="inner">
-{{--                            <h3>{{ $products_count }}</h3>--}}
+                            <h3>{{ \App\Models\Company::count() }}</h3>
 
                             <p>Companies</p>
                         </div>
@@ -40,7 +40,7 @@
                 <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-yellow">
                         <div class="inner">
-{{--                            <h3>{{ $users_count }}</h3>--}}
+                            <h3>{{ \App\Models\Employee::count() }}</h3>
 
                             <p>Employees</p>
                         </div>
